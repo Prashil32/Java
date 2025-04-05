@@ -1,0 +1,13 @@
+
+final class Animal {
+    final String type = "Mammal";
+    final void displayType() {
+        System.out.println("Animal type: " + type);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Animal();
+        a.displayType();
+    }
+}
