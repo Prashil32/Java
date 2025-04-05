@@ -1,0 +1,19 @@
+public class OverloadExample {
+    void display(int a) {
+        System.out.println("Integer: " + a);
+    }
+    void display(int a, int b) {
+        System.out.println("Sum: " + (a + b));
+    }
+    void display(String message) {
+        System.out.println("Message: " + message);
+    }
+
+    public static void main(String[] args) {
+        OverloadExample obj = new OverloadExample();
+
+        obj.display(10);              
+        obj.display(5, 15);           
+        obj.display("Hello Java!"); 
+    }
+}
