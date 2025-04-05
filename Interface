@@ -1,0 +1,32 @@
+
+interface Mammal {
+    void makeSound(); 
+    void eat();      
+}
+
+class Cow implements Mammal {
+    public void makeSound() {
+        System.out.println("Moooo..!");
+    }
+    public void eat() {
+        System.out.println("Cow is eating.");
+    }
+}
+class Dolphin implements Mammal               
+public void makeSound() {
+ System.out.println("swim!");
+    }
+ public void eat() {
+ System.out.println("Cat is eating.");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Mammal myCow = new Cow();
+        Mammal myDolphin= new Dolphin();
+        myCow.makeSound();
+        myCow.eat();
+        myDolphin.makeSound();
+myDolphin.eat();
+    }
+}
